@@ -22,6 +22,7 @@ export function SiteHeader() {
   }, []);
 
   return (
+    <>
     <header
       className="fixed inset-x-0 top-0 z-50 transition-all duration-500"
       style={{
@@ -73,6 +74,7 @@ export function SiteHeader() {
           {open ? "✕" : "☰"}
         </button>
       </div>
+    </header>
 
       <nav
         className={`md:hidden fixed inset-0 flex flex-col items-center justify-center gap-8 transition-transform duration-500 ${
@@ -100,6 +102,6 @@ export function SiteHeader() {
           Rezerviraj stol
         </a>
       </nav>
-    </header>
+    </>
   );
 }
