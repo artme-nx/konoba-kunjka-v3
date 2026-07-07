@@ -77,7 +77,7 @@ export function SiteHeader() {
     </header>
 
       <nav
-        className={`md:hidden fixed inset-0 flex flex-col items-center justify-center gap-8 transition-transform duration-500 ${
+        className={`md:hidden fixed inset-0 z-40 flex flex-col items-center justify-center gap-8 transition-transform duration-500 ${
           open ? "translate-x-0" : "translate-x-full"
         }`}
         style={{ background: "var(--background)" }}
